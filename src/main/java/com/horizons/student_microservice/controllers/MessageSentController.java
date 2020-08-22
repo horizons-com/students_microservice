@@ -26,7 +26,7 @@ public class MessageSentController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-    public void modifyStudentById(@PathVariable("id") ObjectId id, @Valid @RequestBody MessageSent messageSent) {
+    public void modifyMessageSentById(@PathVariable("id") ObjectId id, @Valid @RequestBody MessageSent messageSent) {
         messageSent.setId(id);
         repository.save(messageSent);
     }

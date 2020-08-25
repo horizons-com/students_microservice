@@ -9,12 +9,12 @@ public class MessageReceived {
     @Id
     private ObjectId id;
     private Date dateReceived;
-    private ObjectId messageId;
+    private String messageId;
 
     public MessageReceived() {
     }
 
-    public MessageReceived(ObjectId id, Date dateReceived, ObjectId messageId) {
+    public MessageReceived(ObjectId id, Date dateReceived, String messageId) {
         this.id = id;
         this.dateReceived = dateReceived;
         this.messageId = messageId;
@@ -36,11 +36,11 @@ public class MessageReceived {
         this.dateReceived = dateReceived;
     }
 
-    public ObjectId getMessageId() {
+    public String getMessageId() {
         return messageId;
     }
 
-    public void setMessageId(ObjectId messageId) {
+    public void setMessageId(String messageId) {
         this.messageId = messageId;
     }
 }

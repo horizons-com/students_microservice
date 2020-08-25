@@ -8,6 +8,8 @@ public class Student {
     public ObjectId id;
     public String name;
     public int mentorId;
+    private String messagesSent;
+    private String messagesReceived;
 
     public Student() {
 
@@ -40,5 +42,21 @@ public class Student {
 
     public void setMentorId(int mentorId) {
         this.mentorId = mentorId;
+    }
+
+    public String getMessagesSent() {
+        return messagesSent;
+    }
+
+    public void setMessagesSent(String messagesSent) {
+        this.messagesSent = messagesSent;
+    }
+
+    public String getMessagesReceived() {
+        return messagesReceived;
+    }
+
+    public void setMessagesReceived(String messagesReceived) {
+        this.messagesReceived = messagesReceived;
     }
 }

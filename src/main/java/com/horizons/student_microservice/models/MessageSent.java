@@ -9,12 +9,12 @@ public class MessageSent {
     @Id
     private ObjectId id;
     private Date dateSent;
-    private ObjectId messageId;
+    private String messageId;
 
     public MessageSent() {
     }
 
-    public MessageSent(ObjectId id, Date dateSent, ObjectId messageId) {
+    public MessageSent(ObjectId id, Date dateSent, String messageId) {
         this.id = id;
         this.dateSent = dateSent;
         this.messageId = messageId;
@@ -36,11 +36,11 @@ public class MessageSent {
         this.dateSent = dateSent;
     }
 
-    public ObjectId getMessageId() {
+    public String getMessageId() {
         return messageId;
     }
 
-    public void setMessageId(ObjectId messageId) {
+    public void setMessageId(String messageId) {
         this.messageId = messageId;
     }
 }

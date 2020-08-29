@@ -10,7 +10,6 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/students")
 public class StudentController {
     @Autowired
     private StudentRepository repository;

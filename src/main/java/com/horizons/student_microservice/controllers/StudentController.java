@@ -24,11 +24,16 @@ public class StudentController {
         return repository.findById(id);
     }
 
+    @RequestMapping(value = "/user/{username}", method = RequestMethod.GET)
+    public Student getStudentByUsername(@PathVariable("username") String username) {
+        return repository.findByUsername(username);
+    }
+/*
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public void modifyStudentById(@PathVariable("id") ObjectId id, @Valid @RequestBody Student student) {
         student.setId(id);
         repository.save(student);
-    }
+    }*/
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public Student createStudent( @Valid @RequestBody Student student) {

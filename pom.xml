@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.horizons</groupId>
-	<artifactId>students</artifactId>
+	<artifactId>Students</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student_microservice</name>
+	<name>Students</name>
 	<description>Student microservice</description>
 
 	<properties>

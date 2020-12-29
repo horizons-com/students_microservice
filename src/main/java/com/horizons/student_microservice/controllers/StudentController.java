@@ -38,8 +38,8 @@ public class StudentController {
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public Student createStudent( @Valid @RequestBody Student student) {
         student.setId(ObjectId.get());
-        repository.save(student);
-        return student;
+        return repository.save(student);
+        // return student;
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
